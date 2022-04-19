@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_payment
+    description: One unique payment per row
+    columns: 
+      - name: ID
+        description: Primary key for stg_payment
+        tests:
+          - unique
+          - not_null
